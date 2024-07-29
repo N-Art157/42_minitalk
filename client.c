@@ -22,12 +22,12 @@ void	send_message(int pid, char c)
 		if ((c & (1 << bit)) != 0)
 		{
 			if (kill(pid, SIGUSR1) == -1)
-				return ;
+				error_handler("Error", NULL);
 		}
 		else
 		{
 			if (kill(pid, SIGUSR2) == -1)
-				return ;
+				error_handler("Error", NULL);
 		}
 		usleep(WAIT_TIME);
 		bit++;
@@ -52,6 +52,5 @@ int	main(int argc, char	**argv)
 		send_message(pid, argv[2][index]);
 		index++;
 	}
-	send_message(pid, '\n');
 	return (0);
 }

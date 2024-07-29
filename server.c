@@ -46,7 +46,7 @@ int	main(void)
 	while (1)
 	{
 		pause();
-		usleep(WAIT_TIME);
+		usleep(WAIT_TIME * 5);
 	}
 	return (0);
 }

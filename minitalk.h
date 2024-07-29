@@ -17,11 +17,8 @@
 # include "ft_printf/ft_printf.h"
 # include <signal.h>
 
-# define RED "\033[0;31m"
-# define ENDC "\033[0m"
-
 # ifdef __linux__
-#  define WAIT_TIME 2000
+#  define WAIT_TIME 1000
 # endif
 
 # ifdef __APPLE__

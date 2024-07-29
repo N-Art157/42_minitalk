@@ -16,10 +16,9 @@
 
 void	error_handler(char *main_message, char *sub_message)
 {
-	ft_printf(RED"Error: %s"ENDC, main_message);
+	ft_putendl_fd(main_message, 2);
 	if (sub_message)
-		ft_printf(" (%s)", sub_message);
-	ft_printf("\n");
+		ft_putendl_fd(sub_message, 2);
 	exit(1);
 }
 
