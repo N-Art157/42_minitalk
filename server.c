@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   server.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anakagaw <anakagaw@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nakagawashinta <nakagawashinta@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/03 00:36:20 by nakagawashi       #+#    #+#             */
-/*   Updated: 2024/07/08 15:30:55 by anakagaw         ###   ########.fr       */
+/*   Updated: 2024/08/15 18:23:46 by nakagawashi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	main(void)
 	while (1)
 	{
 		pause();
-		usleep(WAIT_TIME * 5);
+		usleep(WAIT_TIME);
 	}
 	return (0);
 }
