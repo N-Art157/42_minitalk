@@ -6,7 +6,7 @@
 /*   By: nakagawashinta <nakagawashinta@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/07 15:22:19 by nakagawashi       #+#    #+#             */
-/*   Updated: 2024/08/15 18:21:20 by nakagawashi      ###   ########.fr       */
+/*   Updated: 2024/08/17 13:33:54 by nakagawashi      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 # endif
 
 # ifdef __APPLE__
-#  define WAIT_TIME 100
+#  define WAIT_TIME 150
 # endif
 
 void	error_handler(char *main_message, char *sub_message);
